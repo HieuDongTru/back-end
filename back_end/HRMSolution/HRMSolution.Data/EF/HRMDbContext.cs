@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using HRMSolution.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +12,7 @@ namespace HRMSolution.Data.EF
         {
             
         }
-
+        public DbSet<HopDong> HopDongs { get; set; }
         
     }
 }
