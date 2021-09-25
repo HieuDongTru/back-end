@@ -58,5 +58,6 @@ namespace HRMSolution.Data.Entities
         public DateTime ngayNghiViec { get; set; }
         public string lyDoNghiViec { get; set; }
         public int tinhChatLaoDong { get; set; }
+        public string anh { get; set; }
     }
 }
