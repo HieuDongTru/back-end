@@ -33,6 +33,15 @@ namespace HRMSolution.Data.EF
             modelBuilder.ApplyConfiguration(new DanhMucTrinhDoConfiguration());
             modelBuilder.ApplyConfiguration(new DieuChuyenConfiguration());
             modelBuilder.ApplyConfiguration(new HinhThucDaoTaoConfiguration());
+            modelBuilder.ApplyConfiguration(new HopDongConfiguration());
+            modelBuilder.ApplyConfiguration(new LichSuBanThanConfiguration());
+            modelBuilder.ApplyConfiguration(new LienHeKhanCapConfiguration());
+            modelBuilder.ApplyConfiguration(new LuongConfiguration());
+            modelBuilder.ApplyConfiguration(new NgoaiNguConfiguration());
+            modelBuilder.ApplyConfiguration(new NguoiThanConfiguration());
+            modelBuilder.ApplyConfiguration(new NhanVienConfiguration());
+            modelBuilder.ApplyConfiguration(new TrinhDoVanHoaConfiguration());
+            modelBuilder.ApplyConfiguration(new YTeConfiguration());
 
             //base.OnModelCreating(modelBuilder);
         }

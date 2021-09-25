@@ -7,19 +7,18 @@ using System.Text;
 
 namespace HRMSolution.Data.Configurations
 {
-    public class DieuChuyenConfiguration : IEntityTypeConfiguration<DieuChuyen>
+    public class NgoaiNguConfiguration : IEntityTypeConfiguration<NgoaiNgu>
     {
-        public void Configure(EntityTypeBuilder<DieuChuyen> builder)
+        public void Configure(EntityTypeBuilder<NgoaiNgu> builder)
         {
-            builder.ToTable("DieuChuyen");
+            builder.ToTable("NgoaiNgu");
             builder.HasKey(x => x.id);
             builder.Property(x => x.id).UseIdentityColumn();
+            builder.Property(x => x.ngoaiNgu);
+            builder.Property(x => x.ngayCap);
+            builder.Property(x => x.trinhDo).HasMaxLength(50);
+            builder.Property(x => x.noiCap).HasMaxLength(50);
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();
-            builder.Property(x => x.ngayHieuLuc);
-            builder.Property(x => x.phong);
-            builder.Property(x => x.to);
-            builder.Property(x => x.chucVu);
-            builder.Property(x => x.chiTiet).HasMaxLength(300);
         }
     }
 }

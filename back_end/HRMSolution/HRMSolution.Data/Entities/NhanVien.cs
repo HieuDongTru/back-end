@@ -54,7 +54,7 @@ namespace HRMSolution.Data.Entities
         public string nganHang { get; set; }
         public int phongBan { get; set; }
         public int to { get; set; }
-        public bool trangThaiLaoDong { get; set; }
+        public int trangThaiLaoDong { get; set; }
         public DateTime ngayNghiViec { get; set; }
         public string lyDoNghiViec { get; set; }
         public int tinhChatLaoDong { get; set; }
