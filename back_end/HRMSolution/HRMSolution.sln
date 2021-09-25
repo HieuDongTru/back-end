@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMSolution.Data", "HRMSolution.Data\HRMSolution.Data.csproj", "{F4F37C4B-9ADB-4F8C-9BF5-F162F7901A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMSolution.Application", "HRMSolution.Application\HRMSolution.Application.csproj", "{34BCD5AE-DACC-457A-A432-9A95C5D5EC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMSolution.WebApp", "HRMSolution.WebApp\HRMSolution.WebApp.csproj", "{D11138C6-1CBF-4F86-A3D1-AC26AC994AE8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4F37C4B-9ADB-4F8C-9BF5-F162F7901A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F37C4B-9ADB-4F8C-9BF5-F162F7901A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F37C4B-9ADB-4F8C-9BF5-F162F7901A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F37C4B-9ADB-4F8C-9BF5-F162F7901A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BCD5AE-DACC-457A-A432-9A95C5D5EC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BCD5AE-DACC-457A-A432-9A95C5D5EC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BCD5AE-DACC-457A-A432-9A95C5D5EC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BCD5AE-DACC-457A-A432-9A95C5D5EC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11138C6-1CBF-4F86-A3D1-AC26AC994AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11138C6-1CBF-4F86-A3D1-AC26AC994AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11138C6-1CBF-4F86-A3D1-AC26AC994AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11138C6-1CBF-4F86-A3D1-AC26AC994AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
