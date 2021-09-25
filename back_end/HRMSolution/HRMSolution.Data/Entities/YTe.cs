@@ -11,7 +11,9 @@ namespace HRMSolution.Data.Entities
         public float chieuCao { get; set; }
         public float canNang { get; set; }
         public string tinhTrangSucKhoe { get; set; }
-
-
+        public string benhTat { get; set; }
+        public string luuY { get; set; }
+        public bool khuyetTat { get; set; }
+        public string maNhanVien { get; set; }
     }
 }
