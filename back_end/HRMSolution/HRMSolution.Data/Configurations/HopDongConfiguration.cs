@@ -13,17 +13,10 @@ namespace HRMSolution.Data.Configurations
         {
             builder.ToTable("HopDong");
             builder.HasKey(x => x.maHopDong);
-<<<<<<< HEAD
             builder.Property(x => x.maHopDong).HasMaxLength(30);
             builder.Property(x => x.ghiChu).HasMaxLength(300);
-=======
-            builder.Property(x => x.loaiHopDong);
-            builder.Property(x => x.chucDanh);
-            builder.Property(x => x.luongCoBan);
-            builder.Property(x => x.hopDongTuNgay);
-            builder.Property(x => x.hopDongDenNgay);
-            builder.Property(x => x.ghiChu).HasMaxLength(50);
->>>>>>> parent of 3a8e8f8 (configuration all entity)
+            builder.Property(x => x.hopDongTuNgay).HasColumnType("datetime");
+            builder.Property(x => x.hopDongDenNgay).HasColumnType("datetime");
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();
         }
     }

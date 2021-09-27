@@ -59,5 +59,12 @@ namespace HRMSolution.Data.Entities
         public string lyDoNghiViec { get; set; }
         public int tinhChatLaoDong { get; set; }
         public string anh { get; set; }
+
+
+        public List<TrinhDoVanHoa> TrinhDoVanHoas { get; set; }
+
+        public LichSuBanThan LichSuBanThan { get; set; }
+        public YTe YTe { get; set; }
+        public LienHeKhanCap LienHeKhanCap { get; set; }
     }
 }

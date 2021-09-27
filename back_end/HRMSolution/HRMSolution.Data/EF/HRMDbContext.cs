@@ -14,28 +14,7 @@ namespace HRMSolution.Data.EF
             
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new DanhMucChucDanhConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucChucVuConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucChuyenMonConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucDanTocConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucHieuQuaConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucKhenThuongKyLuatConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucLoaiHopDongConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucNgachCongChucConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucNgoaiNguConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucNguoiThanConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucPhongBanConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucTinhChatLaoDongConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucToConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucTonGiaoConfiguration());
-            modelBuilder.ApplyConfiguration(new DanhMucTrinhDoConfiguration());
-            modelBuilder.ApplyConfiguration(new DieuChuyenConfiguration());
-            modelBuilder.ApplyConfiguration(new HinhThucDaoTaoConfiguration());
-
-            //base.OnModelCreating(modelBuilder);
-        }
+        
 
         public DbSet<DanhMucChucDanh> danhMucChucDanhs { get; set; }
         public DbSet<DanhMucChucVu> danhMucChucVus { get; set; }
@@ -63,6 +42,55 @@ namespace HRMSolution.Data.EF
         public DbSet<TrinhDoVanHoa> trinhDoVanHoas { get; set; }
         public DbSet<YTe> yTes { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new DanhMucChucDanhConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucChucVuConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucChuyenMonConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucDanTocConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucHieuQuaConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucKhenThuongKyLuatConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucLoaiHopDongConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucNgachCongChucConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucNgoaiNguConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucNguoiThanConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucPhongBanConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucTinhChatLaoDongConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucToConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucTonGiaoConfiguration());
+            modelBuilder.ApplyConfiguration(new DanhMucTrinhDoConfiguration());
+            modelBuilder.ApplyConfiguration(new DieuChuyenConfiguration());
+            modelBuilder.ApplyConfiguration(new HinhThucDaoTaoConfiguration());
+            modelBuilder.ApplyConfiguration(new HopDongConfiguration());
+            modelBuilder.ApplyConfiguration(new LienHeKhanCapConfiguration());
+            modelBuilder.ApplyConfiguration(new LuongConfiguration());
+            modelBuilder.ApplyConfiguration(new NgoaiNguConfiguration());
+            modelBuilder.ApplyConfiguration(new NguoiThanConfiguration());
+            modelBuilder.ApplyConfiguration(new NhanVienConfiguration());
+            modelBuilder.ApplyConfiguration(new TrinhDoVanHoaConfiguration());
+            modelBuilder.ApplyConfiguration(new YTeConfiguration());
 
+            modelBuilder.Entity<NhanVien>()
+                .HasOne(x => x.LichSuBanThan)
+                .WithOne(p => p.NhanVien)
+                .HasForeignKey<LichSuBanThan>(x => x.maNhanVien);
+            modelBuilder.Entity<NhanVien>()
+                .HasOne(x => x.LienHeKhanCap)
+                .WithOne(p => p.NhanVien)
+                .HasForeignKey<LienHeKhanCap>(x => x.maNhanVien);
+            modelBuilder.Entity<NhanVien>()
+                .HasOne(x => x.YTe)
+                .WithOne(p => p.NhanVien)
+                .HasForeignKey<YTe>(x => x.maNhanVien);
+            modelBuilder.Entity<TrinhDoVanHoa>()
+                .HasOne(x => x.NhanVien)
+                .WithMany(b => b.TrinhDoVanHoas);
+
+            //modelBuilder.ApplyConfiguration(new YTeNhanVienConfiguration());
+            //modelBuilder.ApplyConfiguration(new LienHeKhanCapNhanVienConfiguration());
+            //modelBuilder.ApplyConfiguration(new LichSuBanThanNhanVienConfiguration());
+
+            //base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "Data" : "Server=HIEUDONGTRU;Database=NhanSu;Trusted_Connection=True;"
+    "Data" : "Server=HIEUDONGTRU;Database=NhanSu1;Trusted_Connection=True;"
   }
 }

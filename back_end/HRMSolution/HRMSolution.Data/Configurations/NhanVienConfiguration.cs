@@ -12,6 +12,7 @@ namespace HRMSolution.Data.Configurations
 
         public void Configure(EntityTypeBuilder<NhanVien> builder)
         {
+            
             builder.ToTable("NhanVien");
             builder.HasKey(x => x.maNhanVien);
             builder.Property(x => x.maNhanVien).HasMaxLength(10);
@@ -43,6 +44,17 @@ namespace HRMSolution.Data.Configurations
             builder.Property(x => x.nganHang).HasMaxLength(50);
             builder.Property(x => x.lyDoNghiViec).HasMaxLength(50);
             builder.Property(x => x.ngayChinhThuc).HasColumnType("datetime");
+            builder.Property(x => x.ngaySinh).HasColumnType("datetime");
+            builder.Property(x => x.ngayCap).HasColumnType("datetime");
+            builder.Property(x => x.ngayTuyenDung).HasColumnType("datetime");
+            builder.Property(x => x.ngayThuViec).HasColumnType("datetime");
+            builder.Property(x => x.ngayVaoBan).HasColumnType("datetime");
+            builder.Property(x => x.ngayVaoDang).HasColumnType("datetime");
+            builder.Property(x => x.ngayVaoDangChinhThuc).HasColumnType("datetime");
+            builder.Property(x => x.ngayNhapNgu).HasColumnType("datetime");
+            builder.Property(x => x.ngayXuatNgu).HasColumnType("datetime");
+            builder.Property(x => x.ngayVaoDoan).HasColumnType("datetime");
+            builder.Property(x => x.ngayNghiViec).HasColumnType("datetime");
         }
     }
 }

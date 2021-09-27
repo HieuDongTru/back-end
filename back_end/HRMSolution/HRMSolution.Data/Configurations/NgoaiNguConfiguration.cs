@@ -17,6 +17,7 @@ namespace HRMSolution.Data.Configurations
             builder.Property(x => x.trinhDo).HasMaxLength(50);
             builder.Property(x => x.noiCap).HasMaxLength(50);
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();
+            builder.Property(x => x.ngayCap).HasColumnType("datetime");
         }
     }
 }

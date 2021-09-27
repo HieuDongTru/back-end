@@ -15,5 +15,6 @@ namespace HRMSolution.Data.Entities
         public string luuY { get; set; }
         public bool khuyetTat { get; set; }
         public string maNhanVien { get; set; }
+        public NhanVien NhanVien { get; set; }
     }
 }

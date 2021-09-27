@@ -1,0 +1,10 @@
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\bin\Debug\netcoreapp3.1\HRMSolution.Application.deps.json
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\bin\Debug\netcoreapp3.1\HRMSolution.Application.dll
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\bin\Debug\netcoreapp3.1\HRMSolution.Application.pdb
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.csproj.AssemblyReference.cache
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.AssemblyInfoInputs.cache
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.AssemblyInfo.cs
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.csproj.CoreCompileInputs.cache
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.dll
+E:\back-end\back_end\HRMSolution\HRMSolution.Application\obj\Debug\netcoreapp3.1\HRMSolution.Application.pdb
