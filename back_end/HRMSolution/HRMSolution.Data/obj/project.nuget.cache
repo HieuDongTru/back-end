@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DhrMm+/adAi8GJMc/CFPHWvhDzeV0lybBYxR45fo0GONT+LkCrBbZ3Ns9PfFm9HjmlwzlypzcJGy35/HR3Bv7w==",
+  "dgSpecHash": "6//iY54yvig5KGL9c9dfLJ3gOX5pTA+BwDzb3QBkf6voWEZDO2pwtWLs2AX1aMASzPxGGeDQnmCQ0J7grYKSTQ==",
   "success": true,
   "projectFilePath": "E:\\back-end\\back_end\\HRMSolution\\HRMSolution.Data\\HRMSolution.Data.csproj",
   "expectedPackageFiles": [
@@ -17,9 +17,15 @@
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.1\\microsoft.extensions.configuration.3.1.1.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.1\\microsoft.extensions.configuration.fileextensions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.1\\microsoft.extensions.configuration.json.3.1.1.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.1\\microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.1\\microsoft.extensions.fileproviders.physical.3.1.1.nupkg.sha512",
+    "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.1\\microsoft.extensions.filesystemglobbing.3.1.1.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Mina\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

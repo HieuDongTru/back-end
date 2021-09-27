@@ -15,7 +15,6 @@ namespace HRMSolution.Data.Configurations
             builder.HasKey(x => x.maNhanVien);
             builder.Property(x => x.maNhanVien).HasMaxLength(10);
             builder.Property(x => x.hoTen).HasMaxLength(30);
-            builder.Property(x => x.quanHe);
             builder.Property(x => x.dienThoai).HasMaxLength(30);
             builder.Property(x => x.email).HasMaxLength(30);
             builder.Property(x => x.diaChi).HasMaxLength(150);

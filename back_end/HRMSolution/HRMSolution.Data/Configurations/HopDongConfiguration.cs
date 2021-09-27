@@ -14,11 +14,6 @@ namespace HRMSolution.Data.Configurations
             builder.ToTable("HopDong");
             builder.HasKey(x => x.maHopDong);
             builder.Property(x => x.maHopDong).HasMaxLength(30);
-            builder.Property(x => x.loaiHopDong);
-            builder.Property(x => x.chucDanh);
-            builder.Property(x => x.luongCoBan);
-            builder.Property(x => x.hopDongTuNgay);
-            builder.Property(x => x.hopDongDenNgay);
             builder.Property(x => x.ghiChu).HasMaxLength(300);
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();
         }

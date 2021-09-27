@@ -14,8 +14,6 @@ namespace HRMSolution.Data.Configurations
             builder.ToTable("NgoaiNgu");
             builder.HasKey(x => x.id);
             builder.Property(x => x.id).UseIdentityColumn();
-            builder.Property(x => x.ngoaiNgu);
-            builder.Property(x => x.ngayCap);
             builder.Property(x => x.trinhDo).HasMaxLength(50);
             builder.Property(x => x.noiCap).HasMaxLength(50);
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();

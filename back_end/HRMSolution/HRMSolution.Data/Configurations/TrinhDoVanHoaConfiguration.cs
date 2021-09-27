@@ -15,11 +15,6 @@ namespace HRMSolution.Data.Configurations
             builder.HasKey(x => x.id);
             builder.Property(x => x.id).UseIdentityColumn();
             builder.Property(x => x.tenTruong).HasMaxLength(50);
-            builder.Property(x => x.chuyenNganh);
-            builder.Property(x => x.tuThoiGian);
-            builder.Property(x => x.denThoiGian);
-            builder.Property(x => x.hinhThucDaoTao);
-            builder.Property(x => x.trinhDo);
             builder.Property(x => x.maNhanVien).HasMaxLength(10).IsRequired();
         }
     }
