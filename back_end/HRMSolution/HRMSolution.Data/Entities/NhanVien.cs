@@ -17,9 +17,14 @@ namespace HRMSolution.Data.Entities
         public string diDong { get; set; }
         public string facebook { get; set; }
         public string skype { get; set; }
+        public int maSoThue { get; set; }
+        public string hoChieu { get; set; }
+        public string noiCapHoChieu { get; set; }
+        public DateTime ngayCapHoChieu { get; set; }
+        public DateTime ngayHetHanHoChieu { get; set; }
         public string cccd { get; set; }
-        public DateTime ngayCap { get; set; }
-        public string noiCap { get; set; }
+        public DateTime ngayCapCCCD { get; set; }
+        public string noiCapCCCD { get; set; }
         public string noiSinh { get; set; }
         public string queQuan { get; set; }
         public string thuongTru { get; set; }

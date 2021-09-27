@@ -23,7 +23,7 @@ namespace HRMSolution.Data.Configurations
             builder.Property(x => x.facebook).HasMaxLength(25);
             builder.Property(x => x.skype).HasMaxLength(25);
             builder.Property(x => x.cccd).HasMaxLength(15);
-            builder.Property(x => x.noiCap).HasMaxLength(25);
+            builder.Property(x => x.noiCapCCCD).HasMaxLength(25);
             builder.Property(x => x.noiSinh).HasMaxLength(150);
             builder.Property(x => x.queQuan).HasMaxLength(150);
             builder.Property(x => x.thuongTru).HasMaxLength(150);
@@ -45,7 +45,7 @@ namespace HRMSolution.Data.Configurations
             builder.Property(x => x.lyDoNghiViec).HasMaxLength(50);
             builder.Property(x => x.ngayChinhThuc).HasColumnType("datetime");
             builder.Property(x => x.ngaySinh).HasColumnType("datetime");
-            builder.Property(x => x.ngayCap).HasColumnType("datetime");
+            builder.Property(x => x.ngayCapCCCD).HasColumnType("datetime");
             builder.Property(x => x.ngayTuyenDung).HasColumnType("datetime");
             builder.Property(x => x.ngayThuViec).HasColumnType("datetime");
             builder.Property(x => x.ngayVaoBan).HasColumnType("datetime");
@@ -55,6 +55,9 @@ namespace HRMSolution.Data.Configurations
             builder.Property(x => x.ngayXuatNgu).HasColumnType("datetime");
             builder.Property(x => x.ngayVaoDoan).HasColumnType("datetime");
             builder.Property(x => x.ngayNghiViec).HasColumnType("datetime");
+            builder.Property(x => x.noiCapHoChieu).HasMaxLength(25);
+            builder.Property(x => x.ngayCapHoChieu).HasColumnType("datetime");
+            builder.Property(x => x.ngayHetHanHoChieu).HasColumnType("datetime");
         }
     }
 }
