@@ -6,7 +6,7 @@ namespace HRMSolution.Data.Entities
 {
     public class YTe
     {
-        public string maNhanVien { get; set; }
+        public int id { get; set; }
         public string nhomMau { get; set; }
         public float chieuCao { get; set; }
         public float canNang { get; set; }
@@ -14,6 +14,6 @@ namespace HRMSolution.Data.Entities
         public string benhTat { get; set; }
         public string luuY { get; set; }
         public bool khuyetTat { get; set; }
-        
+        public string maNhanVien { get; set; }
     }
 }

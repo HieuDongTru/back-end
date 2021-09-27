@@ -7,7 +7,7 @@ using System.Text;
 
 namespace HRMSolution.Data.Configurations
 {
-    public class DanhMucNgachCongChucConfiguration : IEntityTypeConfiguration<DanhMucNgachCongChuc>
+    class DanhMucNgachCongChucConfiguration : IEntityTypeConfiguration<DanhMucNgachCongChuc>
     {
         public void Configure(EntityTypeBuilder<DanhMucNgachCongChuc> builder)
         {
